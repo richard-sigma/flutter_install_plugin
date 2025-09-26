@@ -26,6 +26,9 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 34
+    namespace = "com.example.installplugin"
+
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
@@ -34,8 +37,6 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
-    compileSdkVersion 30
-    namespace = "com.example.installplugin"
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
